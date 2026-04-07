@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  pointer-events: auto;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "zesty";
+  src: url("../zestful_christmas/Zestful\ Christmas-Personal\ Use.otf");
+}
+
+.home .line {
+  border-top: solid 1px white;
+  padding: 10px;
+  width: fit-content;
+  height: fit-content;
+  color: orange;
+  display: flex;
+  gap: 15px;
+}
+
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.493);
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+  position: relative;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.home .image {
+  display: grid;
+  grid-template-columns: 400px 1fr 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  background: radial-gradient(
+    circle at top left,
+    #d3541c 0%,
+    #8d2b0a 45%,
+    #3a0d0a 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: border-box;
+  border: solid 1px black;
+  height: 697px;
+  width: 97.92vw;
+  padding: 15px;
+  position: relative;
+  filter: brightness(0.75);
+}
+
+.home .image > * {
+  position: relative;
+  z-index: 1;
+}
+
+.home .image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.home .pizza_img {
+  grid-column: 3;
+  grid-row: 2;
+  background: url("../images/pizza2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 90%;
+  height: 100%;
+}
+
+.home .header_txt {
+  color: #ffffff;
+  width: 600px;
+  font-size: 130px;
+  line-height: 1.2;
+  display: grid;
+  place-items: center;
+  font-family: "Great Vibes", cursive;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+nav {
+  margin-top: 15px;
+  width: 400px;
+  height: 50px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  z-index: 2;
+  position: fixed;
+  left: 35%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+}
+
+nav button {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  padding: 10px 18px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+nav button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.home .intro {
+  background: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.home .intro p {
+  font-size: 1.4rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #333;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+}
