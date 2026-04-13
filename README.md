@@ -29,3 +29,6 @@ The project uses Vite as a build tool and follows a modular structure with TypeS
 
 ## Purpose  
 The purpose of this project was to rebuild an existing JavaScript project using TypeScript to improve code structure, type safety, and overall development skills.
+
+## Deployment
+Available under the following link: https://alexcactus0.github.io/restaurant-TS/
